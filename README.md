@@ -18,7 +18,7 @@ then the following variable is written to .taskrc, and the associated filter is 
 ```
 context=work
 ```
-The cmx command uses 2 taskrc varables; "context.cmx.read=" and "cmx.contexts=", so with the command;
+The cmx command uses the `task config` command to set new taskrc varables; `context.cmx.read=` and `context.cmx.write` and `cmx.contexts=`, so with the command;
 ```
 task cmx work,morning
 ```
