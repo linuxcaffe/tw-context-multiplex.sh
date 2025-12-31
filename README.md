@@ -34,3 +34,11 @@ and the native context variable is set to;
 ```
 context=cmx
 ```
+This new cmx command doesn't change the function of the existing `task context` command, which would still be used to define, delete, set or clear context variables, like usual, but cmx is used to add or remove more than one context. This could even be done by external scripts, like cron jobs, for example. 
+
+cmx sub-commands;
+`cmx` with no sub-command reads the current `cmx.contexts=` variable(s) (if any) collects those values from the defined context(s) (if any) writes `context.cmx.read=` and/or `context.cmx.write=` variables, and then sets the `context=cmx` variable. 
+`cmx context1,context2,contextN` clears any existing `cmx.contexts=` value, then combines those new context values.
+`cmx +context3` adds context3 to the existing set (not to be confused with taskwarrior tag-related commands)
+`cmx -context2` removes context2 from the current set
+`cmx none` clears all cmx values and un-sets `context=` 
