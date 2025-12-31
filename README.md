@@ -43,6 +43,6 @@ cmx sub-commands;
 | `cmx context1,context2,contextN` | clears any existing `cmx.contexts=` value, then combines those new context values. |
 | `cmx +context3` | adds context3 to the existing set (not to be confused with taskwarrior tag-related commands) |
 | `cmx -context2` | removes context2 from the current set |
-| `cmx list` | lists the current set of contexts |
+| `cmx list` | lists the current set of active contexts |
 | `cmx none` | clears all cmx values and `context=` |
 
